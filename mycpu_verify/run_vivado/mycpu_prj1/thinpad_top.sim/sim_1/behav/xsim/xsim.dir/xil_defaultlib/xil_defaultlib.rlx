@@ -1,0 +1,13 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/confreg.v,1635321312,verilog,,C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/mycpu_top.v,,confreg,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/mycpu_top.v,1685946981,verilog,,C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/regfile.v,,mycpu_top,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/regfile.v,1631484488,verilog,,C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/thinpad_top.v,,regfile,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v,1635232072,verilog,,,,decoder_2_4;decoder_4_16;decoder_5_32;decoder_6_64,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/thinpad_top.v,1637307022,verilog,,C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v,,thinpad_top,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/xilinx_ip/inst_ram/sim/inst_ram.v,1685916967,verilog,,C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/testbench/clock.v,,inst_ram,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/testbench/clock.v,1590804130,verilog,,C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/confreg.v,,clock,,,,,,,,
+C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/testbench/mycpu_tb.sv,1685947297,systemVerilog,,,,tb,,,,,,,,

@@ -1,0 +1,500 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun  5 14:36:28 2023
+# Process ID: 16024
+# Current directory: C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.runs/synth_1
+# Command line: vivado.exe -log thinpad_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
+# Log file: C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.runs/synth_1/thinpad_top.vds
+# Journal file: C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source thinpad_top.tcl -notrace
+Command: synth_design -top thinpad_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15584 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 859.750 ; gain = 234.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/thinpad_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'inst_ram' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.runs/synth_1/.Xil/Vivado-16024-Guo/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_ram' (1#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.runs/synth_1/.Xil/Vivado-16024-Guo/realtime/inst_ram_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (5) of module 'inst_ram' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/thinpad_top.v:26]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_6_64' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_6_64' (2#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:40]
+INFO: [Synth 8-6157] synthesizing module 'decoder_4_16' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_4_16' (3#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:14]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2_4' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2_4' (4#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_5_32' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_5_32' (5#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/tools.v:27]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (6#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (7#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/myCPU/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/confreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (8#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/confreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (9#1) [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/thinpad_top.v:3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[31]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[30]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[29]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[28]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[27]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[26]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[25]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[24]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[23]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[22]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[21]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[20]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[19]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[18]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[17]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[16]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[12]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[11]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[10]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[9]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 933.328 ; gain = 308.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 933.328 ; gain = 308.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 933.328 ; gain = 308.113
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 933.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Finished Parsing XDC File [c:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Parsing XDC File [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk_11M0592'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'clk_11M0592_IBUF'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'clk_11M0592'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'touch_btn[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'touch_btn[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'touch_btn[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'touch_btn[3]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'clock_btn'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'clock_btn_IBUF'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:18]
+WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'txd'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'rxd'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'video_clk'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'video_red[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'video_red[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'video_red[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'video_green[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'video_green[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'video_green[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'video_blue[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'video_blue[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'video_hsync'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'video_vsync'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'video_de'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[3]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[4]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[5]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[6]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'dpy0[7]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[3]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[4]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[5]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[6]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'dpy1[7]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[3]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[4]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[5]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[6]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[7]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[8]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[9]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[10]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[11]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[12]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[13]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[14]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[15]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[16]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[17]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[18]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[19]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[20]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[21]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'flash_a[22]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[3]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[4]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[5]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[6]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[7]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[8]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[9]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[10]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[11]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[12]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[13]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[14]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'flash_d[15]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'flash_byte_n'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'flash_ce_n'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'flash_oe_n'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'flash_rp_n'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'flash_vpen'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'flash_we_n'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[0]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[1]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[2]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:168]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[3]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[4]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[5]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[6]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[7]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[8]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[9]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[10]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[11]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[12]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[13]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[14]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[15]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[16]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'base_ram_addr[17]'. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:183]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc:183]
+Finished Parsing XDC File [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thinpad_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 982.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 982.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 982.199 ; gain = 356.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 982.199 ; gain = 356.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 982.199 ; gain = 356.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 982.199 ; gain = 356.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mycpu_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+Module confreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[31]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[30]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[29]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[28]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[27]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[26]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[25]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[24]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[23]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[22]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[21]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[20]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[19]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[18]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[17]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[16]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[12]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[11]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[10]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[9]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dip_sw[8]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 982.199 ; gain = 356.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------+-----------+----------------------+--------------+
+|thinpad_top | mycpu_top/u_regfile/rf_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+----------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1012.684 ; gain = 387.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1035.723 ; gain = 410.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------+-----------+----------------------+--------------+
+|thinpad_top | mycpu_top/u_regfile/rf_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+----------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1035.723 ; gain = 410.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |inst_ram |     1|
+|2     |BUFG     |     1|
+|3     |CARRY4   |    13|
+|4     |LUT2     |    24|
+|5     |LUT3     |     9|
+|6     |LUT4     |     7|
+|7     |LUT5     |     9|
+|8     |LUT6     |   140|
+|9     |RAM32M   |    12|
+|10    |FDRE     |    22|
+|11    |IBUF     |    10|
+|12    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------+----------+------+
+|      |Instance      |Module    |Cells |
++------+--------------+----------+------+
+|1     |top           |          |   295|
+|2     |  confreg     |confreg   |    17|
+|3     |  mycpu_top   |mycpu_top |   219|
+|4     |    u_regfile |regfile   |   192|
++------+--------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1045.180 ; gain = 371.094
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.180 ; gain = 419.965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1054.531 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1060.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1060.074 ; gain = 761.785
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1060.074 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/10632/Documents/GitHub/CPU_CDE1/mycpu_verify/run_vivado/mycpu_prj1/thinpad_top.runs/synth_1/thinpad_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  5 14:37:05 2023...
